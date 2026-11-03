@@ -1,3 +1,4 @@
+try{
 const D=window.DATA,I=window.IMG||{},$=s=>document.querySelector(s);
 const img=k=>I[k]?`url('${I[k]}')`:`url('assets/${k}.webp')`;
 document.querySelectorAll('[data-img]').forEach(e=>e.style.backgroundImage=img(e.dataset.img));
@@ -11,6 +12,9 @@ document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.d
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>prices(b.dataset.t));prices('y');
 const card=r=>`<blockquote class="rv${r.neg?' neg':''}"><div class="st${r.neg?' bad':''}">${r.neg?'оценка ниже 5':'★★★★★'}</div><p>${esc(r.t)}</p><b>${esc(r.a)}</b><small>${r.d} · Яндекс Карты</small>${r.r?`<div class="rep"><b>Ответ организации · ${r.rd}</b><br>${esc(r.r)}</div>`:''}</blockquote>`;
 const all=D.reviews.map(card).join('');$('#track').innerHTML=all+all;
+}catch(e){console.error(e);document.documentElement.classList.add('all')}
+try{
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 $('#burger').onclick=()=>document.body.classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.body.classList.remove('open'));
+}catch(e){document.documentElement.classList.add('all')}
