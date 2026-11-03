@@ -43,6 +43,13 @@ table{width:100%;border-collapse:collapse;text-align:left}td{padding:12px 4px;bo
 @media(max-width:860px){nav{position:fixed;inset:76px 12px auto;flex-direction:column;padding:22px;border-radius:18px;background:rgba(10,12,18,.95);border:1px solid var(--bd);display:none}body.open nav{display:flex}.burger{display:block;margin-left:auto}.pill{display:none}
 .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal div:nth-child(4){grid-column:span 1}.ct{grid-template-columns:1fr}.arr{display:none}.fab{display:grid}.hdr{gap:10px}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stats a{padding:22px;border-radius:20px;background:var(--gl);border:1px solid var(--bd);text-decoration:none;transition:.3s}.stats a:hover{border-color:var(--b)}.stats b{display:block;font:800 clamp(20px,2.6vw,32px) Unbounded;background:linear-gradient(90deg,#fff,var(--b));-webkit-background-clip:text;color:transparent;word-break:break-all}.stats span{color:var(--m);font-size:14px}
+.tabs{display:inline-flex;gap:6px;padding:5px;border-radius:99px;background:rgba(0,0,0,.35);border:1px solid var(--bd);margin-bottom:24px}.tabs button{border:0;background:none;color:var(--m);font:700 14px Manrope;padding:10px 20px;border-radius:99px;cursor:pointer}.tabs .on{background:var(--a);color:#fff}
+.price{text-align:left}.price h2,.price .kicker{text-align:left}.pc h3{font:700 16px Unbounded;color:var(--b);margin:26px 0 6px}td small{color:var(--m);font-weight:400}.src{color:var(--m);font-size:13px;margin:18px 0 22px}
+.rvs{columns:3 320px;column-gap:16px}.rvs .rv{break-inside:avoid;margin:0 0 16px;display:block}.rv.hide{display:none}.rv .st.bad{color:#ff5a5a}.rv.neg{border-color:rgba(255,90,90,.45)}
+.rep{margin-top:14px;padding:12px 14px;border-left:3px solid var(--a);background:rgba(255,106,43,.07);border-radius:10px;font-size:14px;color:#c9ced8;white-space:pre-line}.rep b{color:var(--a);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.rv p{white-space:pre-line}
+.stats a:last-child b{font-size:clamp(16px,1.7vw,22px);word-break:normal;padding:6px 0}
+@media(max-width:860px){.stats{grid-template-columns:1fr 1fr}}
 </style></head><body>
 <div class="glow g1"></div><div class="glow g2"></div>
 <header class="hdr"><a class="logo" href="#top">АВТОТЮНИНГ<b>71</b></a>
@@ -54,25 +61,32 @@ table{width:100%;border-collapse:collapse;text-align:left}td{padding:12px 4px;bo
 <h1 class="reveal">Звук. Тишина.<br><span class="grad">Характер.</span></h1>
 <p class="sub reveal">Автозвук, шумоизоляция, доп. оборудование, чип-тюнинг, антикор, детейлинг и шиномонтаж — в одном месте.</p>
 <div class="btns reveal"><a class="btn" href="tel:+79539535809">+7 953 953-58-09</a><a class="btn glass" href="https://t.me/+79539535809" target="_blank" rel="noopener">Telegram</a><a class="btn glass" href="https://wa.me/79539535809" target="_blank" rel="noopener">WhatsApp</a></div>
-<a class="rate reveal" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener"><b id="rt">5,0</b><span>★★★★★</span><small><i id="rc">80</i> отзывов на Яндекс Картах</small></a></div></section>
+<a class="rate reveal" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener"><b id="rt">5,0</b><span>★★★★★</span><small>92 оценки · <i id="rc">80</i> отзывов на Яндекс Картах</small></a></div></section>
 
+<section class="wrap"><div class="stats reveal">
+<a href="https://yandex.ru/maps/org/avtotyuning71/93967381613/" target="_blank" rel="noopener"><b>5,0</b><span>Яндекс Карты · 92 оценки, 80 отзывов · «Хорошее место 2026»</span></a>
+<a href="https://vk.com/king_sound_tula" target="_blank" rel="noopener"><b>3 132</b><span>подписчика ВКонтакте</span></a>
+<a href="https://www.avito.ru/schekino/predlozheniya_uslug/shumoizolyatsiya_avtomobilya._ustanovka_avtozvuka_2336184449" target="_blank" rel="noopener"><b>4,8</b><span>Авито · 35 отзывов</span></a>
+<a href="https://www.instagram.com/king_sound_71/" target="_blank" rel="noopener"><b>@king_sound_71</b><span>Instagram</span></a></div></section>
 <section class="wrap" id="services"><p class="kicker reveal">Что делаем</p><h2 class="reveal">Услуги</h2><div class="svc" id="svc"></div></section>
 
 <section class="wrap" id="gallery"><p class="kicker reveal">Направления</p><h2 class="reveal">Атмосфера работ</h2>
 <div class="gal" id="gal"></div><p class="note">Иллюстрации носят оформительский характер.</p></section>
 
-<section class="wrap" id="prices"><div class="glass-card price reveal"><p class="kicker">Стоимость</p><h2>Цены</h2><div id="pl"></div></div></section>
+<section class="wrap" id="prices"><div class="glass-card price reveal"><p class="kicker">Стоимость</p><h2>Цены</h2>
+<div class="tabs"><button class="on" data-t="y">Яндекс Карты</button><button data-t="a">Авито</button></div><div id="pl"></div>
+<p class="src" id="psrc"></p><a class="btn" href="tel:+79539535809">Уточнить цену: +7 953 953-58-09</a></div></section>
 
 <section class="wrap" id="reviews"><p class="kicker reveal">Говорят клиенты</p><h2 class="reveal">Отзывы</h2>
-<div class="car"><button class="arr" id="prev" aria-label="Назад">←</button><div class="track" id="track"></div><button class="arr" id="next" aria-label="Вперёд">→</button></div>
+<div class="rvs" id="track"></div><p class="center"><button class="btn glass" id="more">Показать ещё</button></p>
 <p class="center"><a class="btn glass" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a></p></section>
 
 <section class="wrap" id="contacts"><div class="ct">
 <div class="glass-card reveal"><p class="kicker">Ждём вас</p><h2>Контакты</h2>
-<dl><dt>Адрес</dt><dd>Тульская обл., р.п. Первомайский,<br>Пролетарская ул., 16/2</dd><dt>Телефон</dt><dd><a href="tel:+79539535809">+7 (953) 953-58-09</a></dd><dt>Режим</dt><dd>Ежедневно 10:00–20:00</dd><dt>Оплата</dt><dd>Картой · по предварительной записи</dd></dl>
+<dl><dt>Адрес</dt><dd>Тульская обл., р.п. Первомайский,<br>Пролетарская ул., 16/2</dd><dt>Телефон</dt><dd><a href="tel:+79539535809">+7 (953) 953-58-09</a></dd><dt>Режим</dt><dd>Ежедневно 08:00–20:00 <small>(по карточке Яндекса)</small></dd><dt>Оплата</dt><dd>Картой · по предварительной записи</dd></dl>
 <div class="btns"><a class="btn" href="tel:+79539535809">Позвонить</a><a class="btn glass" href="https://t.me/+79539535809" target="_blank" rel="noopener">Telegram</a><a class="btn glass" href="https://wa.me/79539535809" target="_blank" rel="noopener">WhatsApp</a></div>
-<p class="links"><a href="https://yandex.ru/maps/org/avtotyuning71/93967381613/" target="_blank" rel="noopener">Яндекс Карты — маршрут</a> · <a href="https://vk.com/king_sound_tula" target="_blank" rel="noopener">ВКонтакте</a></p></div>
+<p class="links"><a href="https://yandex.ru/maps/org/avtotyuning71/93967381613/" target="_blank" rel="noopener">Яндекс Карты — маршрут</a> · <a href="https://vk.com/king_sound_tula" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://www.instagram.com/king_sound_71/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.avito.ru/schekino/predlozheniya_uslug/shumoizolyatsiya_avtomobilya._ustanovka_avtozvuka_2336184449" target="_blank" rel="noopener">Авито</a> · <a href="https://masterskaja-avtozvuka71.clients.site/" target="_blank" rel="noopener">Сайт на Яндексе</a></p></div>
 <iframe class="map reveal" title="Карта" loading="lazy" src="https://yandex.ru/map-widget/v1/?oid=93967381613&z=16"></iframe></div></section>
-<footer class="ft">© Автотюнинг71 · Данные — с официальной карточки на Яндекс Картах и группы ВКонтакте</footer>
+<footer class="ft">© Автотюнинг71 · Данные — с карточки Яндекс Карт, объявления Авито, групп ВКонтакте и Instagram (на 03.11.2026). Иллюстрации сгенерированы.</footer>
 <a class="fab" href="tel:+79539535809" aria-label="Позвонить">📞</a>
 <script src="data.js"></script><script src="assets/images.js" defer></script><script src="script.js" defer></script></body></html>
