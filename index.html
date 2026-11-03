@@ -50,6 +50,9 @@ table{width:100%;border-collapse:collapse;text-align:left}td{padding:12px 4px;bo
 .rep{margin-top:14px;padding:12px 14px;border-left:3px solid var(--a);background:rgba(255,106,43,.07);border-radius:10px;font-size:14px;color:#c9ced8;white-space:pre-line}.rep b{color:var(--a);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.rv p{white-space:pre-line}
 .stats a:last-child b{font-size:clamp(16px,1.7vw,22px);word-break:normal;padding:6px 0}
 @media(max-width:860px){.stats{grid-template-columns:1fr 1fr}}
+.yw{padding:22px;max-width:760px;margin:0 auto}.yw iframe{width:100%;height:720px;border:0;border-radius:18px;background:#fff}.ysrc{display:block;margin-top:10px;color:var(--m);font-size:12px;text-align:center}
+.marq{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.mtrack{display:flex;gap:16px;width:max-content;animation:mq 900s linear infinite;align-items:flex-start}.marq:hover .mtrack{animation-play-state:paused}.mtrack .rv{flex:0 0 360px;max-height:460px;overflow:auto}
+@keyframes mq{to{transform:translateX(-50%)}}@media(max-width:860px){.mtrack .rv{flex-basis:280px}.yw iframe{height:600px}}
 </style></head><body>
 <div class="glow g1"></div><div class="glow g2"></div>
 <header class="hdr"><a class="logo" href="#top">АВТОТЮНИНГ<b>71</b></a>
@@ -78,7 +81,9 @@ table{width:100%;border-collapse:collapse;text-align:left}td{padding:12px 4px;bo
 <p class="src" id="psrc"></p><a class="btn" href="tel:+79539535809">Уточнить цену: +7 953 953-58-09</a></div></section>
 
 <section class="wrap" id="reviews"><p class="kicker reveal">Говорят клиенты</p><h2 class="reveal">Отзывы</h2>
-<div class="rvs" id="track"></div><p class="center"><button class="btn glass" id="more">Показать ещё</button></p>
+<div class="ywrap reveal"><div class="glass-card yw"><p class="kicker">Живые отзывы с Яндекс Карт</p><iframe title="Отзывы Автотюнинг71 на Яндекс Картах" loading="lazy" src="https://yandex.ru/maps-reviews-widget/93967381613?comments"></iframe><a class="ysrc" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/" target="_blank" rel="noopener">Автотюнинг71 на картах — Яндекс Карты</a></div></div>
+<p class="kicker reveal" style="margin-top:40px">Все 80 отзывов с ответами организации (снято 03.11.2026)</p>
+<div class="marq" id="marq"><div class="mtrack" id="track"></div></div>
 <p class="center"><a class="btn glass" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a></p></section>
 
 <section class="wrap" id="contacts"><div class="ct">
