@@ -1,82 +1,78 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Автотюнинг71 — автозвук, шумоизоляция, шиномонтаж в Первомайском (Щёкино)</title>
-<meta name="description" content="Мастерская автозвука 71 (King Sound Тула): шумоизоляция, автозвук, доп. оборудование, чип-тюнинг, антикор, шиномонтаж. р.п. Первомайский, Пролетарская ул., 16/2. Тел. +7 953 953-58-09.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="nav">
-  <a class="brand" href="#top">Автотюнинг<span>71</span></a>
-  <button class="burger" aria-label="Меню" onclick="document.body.classList.toggle('open')">☰</button>
-  <nav>
-    <a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
-    <a class="btn small" href="tel:+79539535809">+7 953 953-58-09</a>
-  </nav>
-</header>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Автотюнинг71 — автозвук, шумоизоляция, чип-тюнинг · Первомайский (Щёкино)</title>
+<meta name="description" content="Автотюнинг71: автозвук, шумоизоляция, доп. оборудование, чип-тюнинг, антикор, детейлинг, шиномонтаж. р.п. Первомайский, Пролетарская ул., 16/2. +7 953 953-58-09">
+<meta name="theme-color" content="#07080c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080c;--t:#eef1f6;--m:#8b93a5;--a:#ff6a2b;--b:#22d3ee;--gl:rgba(255,255,255,.05);--bd:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--t);font:16px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}h1,h2,.logo{font-family:Unbounded,sans-serif;letter-spacing:-.02em}
+.glow{position:fixed;width:50vw;height:50vw;border-radius:50%;filter:blur(120px);opacity:.18;z-index:-1}.g1{background:var(--a);top:-10vw;right:-10vw}.g2{background:var(--b);bottom:-15vw;left:-15vw}
+.hdr{position:fixed;inset:12px 12px auto;z-index:50;display:flex;align-items:center;gap:20px;padding:12px 18px;border-radius:18px;background:rgba(10,12,18,.55);backdrop-filter:blur(16px);border:1px solid var(--bd)}
+.logo{font-size:17px;text-decoration:none;font-weight:800}.logo b{background:linear-gradient(90deg,var(--a),#ffb347);-webkit-background-clip:text;color:transparent}
+nav{display:flex;gap:22px;margin-left:auto}nav a{text-decoration:none;color:var(--m);font-weight:600;transition:.2s}nav a:hover{color:var(--t)}
+.pill{padding:9px 18px;border-radius:99px;background:var(--a);text-decoration:none;font-weight:800;font-size:14px}
+.burger{display:none;background:none;border:0;width:32px;height:24px;position:relative}.burger span{position:absolute;left:4px;right:4px;height:2px;background:#fff;transition:.3s}.burger span:first-child{top:8px}.burger span:last-child{top:15px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 6vw 10vh}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:65% center;z-index:-1}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 2%,rgba(7,8,12,.3) 50%,rgba(7,8,12,.6)),linear-gradient(90deg,rgba(7,8,12,.85),transparent 70%)}
+.kicker{color:var(--a);font-weight:800;text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin-bottom:14px}
+h1{font-size:clamp(42px,9vw,120px);line-height:.98;font-weight:800}.grad{background:linear-gradient(90deg,var(--a),#ffc46b 45%,var(--b));-webkit-background-clip:text;color:transparent}
+.sub{max-width:560px;color:#c5cbd6;font-size:clamp(16px,2vw,19px);margin:24px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 26px;border-radius:14px;background:linear-gradient(135deg,var(--a),#ff9a3d);text-decoration:none;font-weight:800;transition:.25s;box-shadow:0 10px 40px -10px var(--a)}.btn:hover{transform:translateY(-3px)}
+.btn.glass{background:var(--gl);border:1px solid var(--bd);backdrop-filter:blur(10px);box-shadow:none}
+.rate{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:12px 18px;border-radius:14px;background:var(--gl);border:1px solid var(--bd);text-decoration:none;backdrop-filter:blur(10px)}.rate b{font:800 26px Unbounded}.rate span{color:#ffc93c}.rate small{color:var(--m)}
+.wrap{max-width:1200px;margin:0 auto;padding:110px 20px 0}h2{font-size:clamp(32px,5vw,56px);margin-bottom:40px}
+.svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.s{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--bd);background:var(--gl);backdrop-filter:blur(12px);transition:.35s}.s:hover{transform:translateY(-6px);border-color:rgba(255,106,43,.5)}
+.s .im{height:150px;background-size:cover;background-position:center}.s .bd{padding:20px 22px 24px}.s .ic{width:46px;height:46px;margin-top:-44px;display:grid;place-items:center;border-radius:14px;background:rgba(10,12,18,.8);border:1px solid var(--bd);font-size:22px;position:relative}
+.s h3{font:700 19px Unbounded;margin:14px 0 10px}.s ul{list-style:none;padding:0;color:#b8bfcc;font-size:14.5px}.s li{padding:3px 0 3px 16px;position:relative}.s li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--a)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}.gal div{border-radius:18px;background-size:cover;background-position:center;transition:.5s}.gal div:hover{transform:scale(1.02)}.gal div:nth-child(1){grid-column:span 2;grid-row:span 2}.gal div:nth-child(4){grid-column:span 2}
+.note{color:var(--m);font-size:13px;margin-top:12px}
+.glass-card{padding:clamp(26px,4vw,48px);border-radius:28px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--bd);backdrop-filter:blur(16px)}
+.price{text-align:center}.price h2{margin-bottom:16px}.big{font:800 clamp(22px,3.5vw,34px) Unbounded;margin-bottom:12px}.price p{color:var(--m);margin-bottom:24px}
+table{width:100%;border-collapse:collapse;text-align:left}td{padding:12px 4px;border-bottom:1px solid var(--bd)}td:last-child{text-align:right;font-weight:800;color:var(--a)}
+.car{display:flex;align-items:center;gap:10px}.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;flex:1;padding:6px 2px}.track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(380px,85%);scroll-snap-align:start;padding:28px;border-radius:22px;background:var(--gl);border:1px solid var(--bd)}.rv .st{color:#ffc93c}.rv p{margin:14px 0 18px;font-size:16.5px}.rv b{display:block}.rv small{color:var(--m)}
+.arr{flex:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--bd);background:var(--gl);color:#fff;font-size:18px;cursor:pointer}.center{text-align:center;margin-top:30px}
+.ct{display:grid;grid-template-columns:1fr 1.1fr;gap:18px}dl{display:grid;grid-template-columns:auto 1fr;gap:12px 22px;margin:0 0 28px}dt{color:var(--m)}dd{margin:0;font-weight:600}dd a{color:var(--a)}
+.links{margin-top:22px;color:var(--m)}.map{width:100%;min-height:440px;border:0;border-radius:28px;filter:grayscale(.4) invert(.9) hue-rotate(180deg)}
+.ft{text-align:center;color:var(--m);font-size:13px;padding:80px 20px 40px}
+.fab{display:none;position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;place-items:center;background:var(--a);text-decoration:none;font-size:24px;z-index:60;box-shadow:0 10px 30px -6px var(--a)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.reveal.in{opacity:1;transform:none}
+@media(max-width:860px){nav{position:fixed;inset:76px 12px auto;flex-direction:column;padding:22px;border-radius:18px;background:rgba(10,12,18,.95);border:1px solid var(--bd);display:none}body.open nav{display:flex}.burger{display:block;margin-left:auto}.pill{display:none}
+.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal div:nth-child(4){grid-column:span 1}.ct{grid-template-columns:1fr}.arr{display:none}.fab{display:grid}.hdr{gap:10px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<header class="hdr"><a class="logo" href="#top">АВТОТЮНИНГ<b>71</b></a>
+<nav id="nav"><a href="#services">Услуги</a><a href="#gallery">Работы</a><a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+<a class="pill" href="tel:+79539535809">Позвонить</a><button class="burger" aria-label="Меню" id="burger"><span></span><span></span></button></header>
 
-<section id="top" class="hero" style="background-image:linear-gradient(90deg,rgba(8,10,14,.92),rgba(8,10,14,.55)),url('https://avatars.mds.yandex.net/get-sprav-posts/17694551/2a0000019bd7df11bb01339098bbb9300964/XL')">
-  <div class="wrap">
-    <p class="tag">Мастерская автозвука 71 · King Sound Тула</p>
-    <h1>Звук, тишина и комфорт<br>для вашего автомобиля</h1>
-    <p class="lead">Шумоизоляция · Автозвук · Дополнительное оборудование · Чип-тюнинг · Антикор · Шиномонтаж</p>
-    <div class="rating"><b>5,0</b> ★★★★★ <span>80 отзывов на Яндексе</span></div>
-    <div class="cta">
-      <a class="btn" href="tel:+79539535809">Позвонить</a>
-      <a class="btn ghost" href="https://t.me/+79539535809" target="_blank" rel="noopener">Telegram</a>
-      <a class="btn ghost" href="https://vk.com/king_sound_tula" target="_blank" rel="noopener">ВКонтакте</a>
-    </div>
-  </div>
-</section>
+<section class="hero" id="top"><div class="hero-bg" data-img="hero"></div>
+<div class="hero-in"><p class="kicker reveal">Студия тюнинга · Первомайский / Щёкино</p>
+<h1 class="reveal">Звук. Тишина.<br><span class="grad">Характер.</span></h1>
+<p class="sub reveal">Автозвук, шумоизоляция, доп. оборудование, чип-тюнинг, антикор, детейлинг и шиномонтаж — в одном месте.</p>
+<div class="btns reveal"><a class="btn" href="tel:+79539535809">+7 953 953-58-09</a><a class="btn glass" href="https://t.me/+79539535809" target="_blank" rel="noopener">Telegram</a><a class="btn glass" href="https://wa.me/79539535809" target="_blank" rel="noopener">WhatsApp</a></div>
+<a class="rate reveal" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener"><b id="rt">5,0</b><span>★★★★★</span><small><i id="rc">80</i> отзывов на Яндекс Картах</small></a></div></section>
 
-<section id="services" class="wrap">
-  <h2>Услуги</h2>
-  <div class="grid">
-    <article class="card"><h3>Шумоизоляция</h3><ul><li>Пол</li><li>Крыша</li><li>Двери</li><li>Багажник</li><li>Колёсные арки</li><li>Капот</li></ul></article>
-    <article class="card"><h3>Автозвук</h3><ul><li>Установка и настройка магнитолы</li><li>Динамики, усилители, сабвуферы</li><li>Установка и настройка процессора</li><li>Преобразователь высокого уровня</li><li>Активный сабвуфер к штатной и нештатной магнитоле</li><li>Накладные подиумы, фальш-панели, фальш-полы</li><li>Дверные карты, стелс-короба, стойки, уголки</li><li>Протяжка акустической проводки, установочного комплекта, RCA</li><li>Подбор компонентов и диагностика неисправностей</li></ul></article>
-    <article class="card"><h3>Дополнительное оборудование</h3><ul><li>Штатный и нештатный микрофон к магнитоле</li><li>Амбиентная подсветка салона</li><li>Массаж, вентиляция, память сидений</li><li>ПТФ, парктроники</li><li>Фаркоп с подключением электропроводки</li><li>Электропривод багажника, доводчики дверей</li><li>Камеры заднего/переднего вида, камеры 360</li><li>Видеорегистраторы</li></ul></article>
-    <article class="card"><h3>И ещё</h3><ul><li>Чип-тюнинг</li><li>Антикоррозийная обработка</li><li>Перетяжка потолка</li><li>Диагностика электропроводки</li><li>Химчистка салона</li><li>Полировка кузова</li><li>Покраска дверных карт</li><li>Ремонт мототехники</li><li>Заправка автокондиционеров</li><li>Шиномонтаж</li></ul></article>
-  </div>
-</section>
+<section class="wrap" id="services"><p class="kicker reveal">Что делаем</p><h2 class="reveal">Услуги</h2><div class="svc" id="svc"></div></section>
 
-<section id="prices" class="band">
-  <div class="wrap center">
-    <h2>Цены</h2>
-    <p class="big">Цены уточняйте по телефону</p>
-    <p>Стоимость зависит от автомобиля и объёма работ. Позвоните или напишите — мастер подскажет.</p>
-    <a class="btn" href="tel:+79539535809">+7 953 953-58-09</a>
-  </div>
-</section>
+<section class="wrap" id="gallery"><p class="kicker reveal">Направления</p><h2 class="reveal">Атмосфера работ</h2>
+<div class="gal" id="gal"></div><p class="note">Иллюстрации носят оформительский характер.</p></section>
 
-<section id="reviews" class="wrap">
-  <h2>Отзывы клиентов</h2>
-  <p class="muted">Рейтинг 5,0 по 80 отзывам на Яндексе. Ниже — отзывы, опубликованные на сайте организации в Яндекс Бизнесе, без изменений.</p>
-  <div class="grid reviews">
-    <blockquote class="card"><p>Хороший сервис,все отлично и быстро сделали ! Буду обращаться</p><footer>Алина Ж. · 2 ноября</footer></blockquote>
-    <blockquote class="card"><p>Хороший сервис, все сделали быстро, качественно, указал на недочеты и исправил их.Всем советую, работают честно, качественно и без лишних вопросов да</p><footer>Тимофей Антонов · 29 октября</footer></blockquote>
-    <blockquote class="card"><p>Нужно было отремонтировать колесо - постоянно спускала. Обратились к ребятам - сделали все на высшем уровне - быстро и качественно. Ребята знают свое дело. Рекомендую всем.</p><footer>Ирина Тимонина · 14 октября</footer></blockquote>
-    <blockquote class="card"><p>Поймал, болт на трассе доехал на запаске до ребят, ребята сделали на высшем уровне</p><footer>Паха . · 31 августа</footer></blockquote>
-  </div>
-  <p class="center"><a class="btn ghost dark" href="https://masterskaja-avtozvuka71.clients.site/" target="_blank" rel="noopener">Все отзывы на Яндексе</a></p>
-</section>
+<section class="wrap" id="prices"><div class="glass-card price reveal"><p class="kicker">Стоимость</p><h2>Цены</h2><div id="pl"></div></div></section>
 
-<section id="contacts" class="band">
-  <div class="wrap contacts">
-    <div>
-      <h2>Контакты</h2>
-      <p><b>Адрес:</b> Тульская обл., р.п. Первомайский, Пролетарская ул., 16/2</p>
-      <p><b>Телефон:</b> <a href="tel:+79539535809">+7 (953) 953-58-09</a> (Telegram)</p>
-      <p><b>Режим работы:</b> ежедневно 10:00–20:00</p>
-      <p><b>Оплата:</b> картой · по предварительной записи</p>
-      <p><a href="https://vk.com/king_sound_tula" target="_blank" rel="noopener">Группа ВКонтакте</a> · <a href="https://masterskaja-avtozvuka71.clients.site/" target="_blank" rel="noopener">Яндекс Бизнес</a></p>
-    </div>
-    <iframe title="Карта" loading="lazy" src="https://yandex.ru/map-widget/v1/?text=%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%9F%D1%80%D0%BE%D0%BB%D0%B5%D1%82%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2016%2F2&z=16"></iframe>
-  </div>
-</section>
+<section class="wrap" id="reviews"><p class="kicker reveal">Говорят клиенты</p><h2 class="reveal">Отзывы</h2>
+<div class="car"><button class="arr" id="prev" aria-label="Назад">←</button><div class="track" id="track"></div><button class="arr" id="next" aria-label="Вперёд">→</button></div>
+<p class="center"><a class="btn glass" href="https://yandex.ru/maps/org/avtotyuning71/93967381613/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a></p></section>
 
-<footer class="foot wrap">© Автотюнинг71 · Мастерская автозвука 71 · Информация взята с официальных страниц организации на Яндексе и ВКонтакте</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section class="wrap" id="contacts"><div class="ct">
+<div class="glass-card reveal"><p class="kicker">Ждём вас</p><h2>Контакты</h2>
+<dl><dt>Адрес</dt><dd>Тульская обл., р.п. Первомайский,<br>Пролетарская ул., 16/2</dd><dt>Телефон</dt><dd><a href="tel:+79539535809">+7 (953) 953-58-09</a></dd><dt>Режим</dt><dd>Ежедневно 10:00–20:00</dd><dt>Оплата</dt><dd>Картой · по предварительной записи</dd></dl>
+<div class="btns"><a class="btn" href="tel:+79539535809">Позвонить</a><a class="btn glass" href="https://t.me/+79539535809" target="_blank" rel="noopener">Telegram</a><a class="btn glass" href="https://wa.me/79539535809" target="_blank" rel="noopener">WhatsApp</a></div>
+<p class="links"><a href="https://yandex.ru/maps/org/avtotyuning71/93967381613/" target="_blank" rel="noopener">Яндекс Карты — маршрут</a> · <a href="https://vk.com/king_sound_tula" target="_blank" rel="noopener">ВКонтакте</a></p></div>
+<iframe class="map reveal" title="Карта" loading="lazy" src="https://yandex.ru/map-widget/v1/?oid=93967381613&z=16"></iframe></div></section>
+<footer class="ft">© Автотюнинг71 · Данные — с официальной карточки на Яндекс Картах и группы ВКонтакте</footer>
+<a class="fab" href="tel:+79539535809" aria-label="Позвонить">📞</a>
+<script src="data.js"></script><script src="assets/images.js" defer></script><script src="script.js" defer></script></body></html>

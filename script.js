@@ -1,3 +1,12 @@
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
-document.querySelectorAll('.card').forEach(c=>io.observe(c));
-document.querySelectorAll('.nav nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('open')));
+const D=window.DATA,I=window.IMG||{},$=s=>document.querySelector(s);
+const img=k=>I[k]?`url('${I[k]}')`:`url('assets/${k}.webp')`;
+document.querySelectorAll('[data-img]').forEach(e=>e.style.backgroundImage=img(e.dataset.img));
+$('#rt').textContent=D.rating;$('#rc').textContent=D.reviewsCount;
+$('#svc').innerHTML=D.services.map(s=>`<article class="s reveal"><div class="im" style="background-image:${img(s.img)}"></div><div class="bd"><div class="ic">${s.i}</div><h3>${s.h}</h3><ul>${s.l.map(x=>`<li>${x}</li>`).join('')}</ul></div></article>`).join('');
+$('#gal').innerHTML=['audio','noise','equip','polish','chip','tires','anticor'].map(k=>`<div class="reveal" style="background-image:${img(k)}"></div>`).join('');
+$('#pl').innerHTML=D.prices.length?`<table>${D.prices.map(p=>`<tr><td>${p.n}</td><td>${p.p}</td></tr>`).join('')}</table>`:`<p class="big">Цены уточняйте по телефону</p><p>Стоимость зависит от автомобиля и объёма работ — мастер подскажет.</p><a class="btn" href="tel:+79539535809">+7 953 953-58-09</a>`;
+$('#track').innerHTML=D.reviews.map(r=>`<blockquote class="rv"><div class="st">★★★★★</div><p>${r.t}</p><b>${r.a}</b><small>${r.d} · Яндекс Карты</small></blockquote>`).join('');
+const tr=$('#track');$('#next').onclick=()=>tr.scrollBy({left:400,behavior:'smooth'});$('#prev').onclick=()=>tr.scrollBy({left:-400,behavior:'smooth'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+$('#burger').onclick=()=>document.body.classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.body.classList.remove('open'));
